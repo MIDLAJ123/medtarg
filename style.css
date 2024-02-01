@@ -197,7 +197,7 @@ css-ib7j1l {
 
 .login {
     background-color: white;
-    height: 60rem;
+    height: 64rem;
     width: 70rem;
     overflow: hidden;
     /* display: flex; */
@@ -246,10 +246,10 @@ input {
     color: white;
     font-size: 19px;
 }
-
+/* 
 .checkbox {
     display: block !important;
-}
+} */
 
 form {
     border-bottom: 1px black;
@@ -308,18 +308,20 @@ h1 {
     font-weight: 800;
     font-style: normal;
 }
-
 .checkbox {
+    display: inline-block !important;
     /* Optional: Adjust appearance */
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    vertical-align: middle; /* Added to align vertically with text */
 }
 
 /* Optional: Style the label text */
 label {
     font-size: 16px;
     color: #333;
+    vertical-align: middle; /* Added to align vertically with checkbox */
 }
 
 /* Optional: Style the link */
@@ -340,6 +342,7 @@ a {
 .checkbox:checked {
     background-color: #007bff; /* Example color when checked */
 }
+
 
 .main{
      margin: auto;

@@ -202,8 +202,8 @@ css-ib7j1l {
     overflow: hidden;
     /* display: flex; */
     text-align: center;
-    margin-top: 100px;
-    margin-left: 500px;
+    margin-top: 50px;
+    margin-left: 490px;
 }
 
 input {
@@ -309,3 +309,46 @@ h1 {
     font-style: normal;
 }
 
+.checkbox {
+    /* Optional: Adjust appearance */
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Optional: Style the label text */
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Optional: Style the link */
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Optional: Remove default checkbox styling */
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.checkbox:checked {
+    background-color: #007bff; /* Example color when checked */
+}
+
+.main{
+     margin: auto;
+}
+
+hr{
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+}

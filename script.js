@@ -1,34 +1,3 @@
-const login = document.getElementById('login');
-const signup = document.getElementById('signup');
-
-const showText = {
-  login : {
-    header : 'Not yet a member?',
-    byline : 'Sign up and discover what we can do for you',
-    buttonText: 'Sign up'
-  },
-  
-  signup : {
-    header : 'Already a member?',
-    byline : 'Sign in and see what\'s new since your last visit',
-    buttonText: 'Sign in'    
-  }
-}
-const switchButton = document.getElementById('switch-button');
-const switchText =  document.getElementById('switch-text');
-
-switchButton.addEventListener('click', () => {
-  login.classList.toggle('hide-view');
-  signup.classList.toggle('hide-view');
-  login.classList.contains('hide-view') ? changeSwitchText('signup') : changeSwitchText('login')
-})
-
-function changeSwitchText(el){
-  switchText.children[0].innerText = showText[el].header;
-  switchText.children[1].innerText = showText[el].byline;
-  switchButton.innerText = showText[el].buttonText;
-}
-
 $(function() {
   var list = $('.js-dropdown-list');
   var link = $('.js-link');
@@ -46,3 +15,25 @@ $(function() {
     }
   });
 });
+
+function sendMail(){
+  var params = {
+    name: document.getElementById("username").value ,
+    email: document.getElementById("email").value ,
+    password: document.getElementById("Password").value ,
+  };
+  
+  const serviceID ="service_k7vkv0a"
+  const templateID ="template_pmmjkvd"
+  
+  emailjs.send(serviceID,templateID,params)
+  .then(
+    res =>{
+      document.getElementById("username").value= "";
+      document.getElementById("email").value= "";
+      document.getElementById("Password").value= "";
+      console.log(res);
+      alert("Your massege sent successfully");
+    })
+    .catch((err) => console.log(err));
+}

@@ -203,7 +203,7 @@ css-ib7j1l {
     /* display: flex; */
     text-align: center;
     margin-top: 50px;
-    margin-left: 490px;
+    margin-left: 250px;
 }
 
 input {
@@ -345,7 +345,7 @@ a {
 
 
 .main{
-     margin: auto;
+    margin: auto;
 }
 
 hr{
@@ -354,4 +354,24 @@ hr{
     border: 0;
     border-top: var(--bs-border-width) solid;
     opacity: .25;
+}
+.form-select{
+    font-size: 16px !important;
+}
+.form-floating>.form-select {
+    padding-top: 0.625rem !important;
+    padding-bottom: 0.625rem;
+}
+.form-floating > .form-control, .form-floating > .form-control-plaintext {
+    border: none !important;
+    border-bottom: 2px solid #bebed2 !important;
+    padding: 1rem 0.75rem;
+}
+label .floatingInput {
+    display: none !important;
+}
+.form-floating>.form-select {
+    border: none !important;
+    border-bottom: 2px solid #bebed2 !important;
+    padding: 1rem 0.75rem;
 }
